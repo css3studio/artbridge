@@ -139,12 +139,18 @@ function init_pc(){
 	$("ul.menu-main > li > a").on("mouseenter",function(){
 		//if($('.cf01').css('display') == "block")	return false;
 		setTimeout(function(){
-			if(is_mouse_on_sub)	$('header').addClass('open-menu');
+			if(is_mouse_on_sub){
+				$('header').addClass('open-menu');
+				$('.breadcrumb01').addClass('open-menu');
+			}
 	  	},300);
 	});
 	$("header .nav-area").on("mouseleave",function(){
 		setTimeout(function(){
-			if(!is_mouse_on_sub)	$('header').removeClass('open-menu');
+			if(!is_mouse_on_sub){
+				$('header').removeClass('open-menu');
+				$('.breadcrumb01').removeClass('open-menu');
+			}
 	  	},300);
 	});
 	$("header nav").on("mouseenter",function(){
