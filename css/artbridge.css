@@ -6,7 +6,7 @@ Author: css3studio
 Version:1.0
 */
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 
 html{height:100%}
@@ -703,6 +703,151 @@ body.home #main-content {
   opacity:0.3;
 }
 
+.headings02{
+  margin-bottom:3rem;
+}
+.headings02 .inner{
+  position:relative;
+  height:20rem;
+}
+.headings02 h1{
+  position:absolute;
+  top:-0.8rem;
+  left:0;
+  opacity:0.3;
+  font-family:'Poppins', sans-serif;
+  font-weight:700;
+  font-size:7.5rem;
+  line-height:1;
+}
+.headings02 .sub-title{
+  padding:5rem 0 0 22rem;
+  font-size:3.75rem;
+  line-height:1.15;
+}
+
+.menu-tab02{
+  display:flex;
+  font-family:'Poppins', sans-serif;
+  margin-bottom:2.5rem;
+}
+.menu-tab02 li{
+  margin-right:1.25rem;
+}
+.menu-tab02 li a{
+  color:var(--black);
+  opacity:0.5;
+  font-size:1.875rem;
+  position:relative;
+  display:block;
+  width:12.1875rem;
+  text-align:center;
+} 
+.menu-tab02 li.current a{
+  font-weight:bold;
+  color:var(--key-brown);
+  opacity:1;
+} 
+.menu-tab02 li a:after{
+  content:"";
+  display:block;
+  margin-top:1rem;
+  height:7px;
+  width:100%;
+  background-color:var(--gray-base);
+  opacity:0.3;
+  display:block;
+}
+.menu-tab02 li.current a:after{
+  background-color:var(--key-brown);
+  opacity:1;
+}
+.menu-tab02 li a:hover{
+  text-decoration:none;
+} 
+.menu-tab02 li a:hover:after{
+  opacity:1;
+  background-color:var(--key-brown);
+}
+
+.list-thumbnail01{
+  display:flex;
+  flex-wrap: wrap;
+  margin-bottom:4rem;
+}
+.list-thumbnail01 > li{
+  flex-basis:49%;
+  margin-right:2%;
+  margin-bottom:2%;
+}
+.list-thumbnail01 > li:nth-child(2n){
+  margin-right:0;
+}
+
+.list-thumbnail02{
+  margin-bottom:4rem;
+}
+.list-thumbnail02 > li{
+  margin-bottom:1.25rem;
+}
+
+.pager01{
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  color:var(--black);
+  font-family:'Poppins', sans-serif;
+}
+.pager01 > li > a{
+  display:block;
+  text-align:center;
+  width:2.625rem;
+  height:2.625rem;
+  line-height:2.625rem;
+  border-radius:1.3125rem;
+  color:var(--black);
+  background-color:var(--bg-color)
+}
+.pager01 > li.pager-current{
+  text-align:center;
+  width:2.625rem;
+  height:2.625rem;
+  line-height:2.625rem;
+  border-radius:1.3125rem;
+  color:var(--white);
+  background-color:var(--key-blue);
+}
+.pager01 > li.pager-previous a{
+	font-size:0;
+  color:var(--bg-color)
+}
+.pager01 > li.pager-previous a:after{
+	content:"\e93b";
+	font-size:1.125rem;
+	font-family:xeicon;
+  color:var(--black);
+}
+.pager01 > li.pager-next a{
+	font-size:0;
+  color:var(--bg-color)
+}
+.pager01 > li.pager-next a:after{
+	content:"\e93e";
+	font-size:1.125rem;
+	font-family:xeicon;
+  color:var(--black);
+}
+.pager01 > li > a:hover{
+  text-decoration:none;
+  color:var(--white);
+  background-color:var(--key-blue);
+}
+.pager01 > li > a:hover:after{
+  color:var(--white);
+}
+
+
+
 /****** static page ******/
 
 
@@ -994,6 +1139,91 @@ body.home #main-content {
 }
 
 
+.card02{
+  display: flex;
+  font-family:'Roboto', sans-serif;
+  align-items: center;
+  border:1px solid var(--line-color);
+}
+.card02:hover{
+  text-decoration:none;
+  border-color:var(--key-brown);
+  background-color: rgba(246, 173, 45, 0.1);
+}
+
+.card02 .thumb {
+  flex-basis:12.5rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  border-right:1px solid var(--line-color);
+}
+.card02:hover .thumb{
+  border-color:var(--key-brown);
+}
+.card02 .thumb:before {
+  content: "";
+  display: block;
+  padding-top:139%
+}
+.card02 .thumb img {
+  width: 100%;
+  min-height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
+}
+.card02 .thumb img.fullwidth {
+  width: auto;
+  height: 100%;
+}
+.card02 .meta{
+  padding: 0 2.625rem;
+}
+.card02 .meta > *{
+  display:block;
+}
+.card02 .meta b{
+  color:var(--key-blue);
+  margin-bottom:1rem;
+}
+.card02 .meta strong{
+  color:var(--black);
+  font-size:1.5rem;
+  margin-bottom:1.5rem;
+  line-height:1.16;
+}
+.card02 .meta em{
+  font-family:'Poppins', sans-serif;
+  font-weight:300;
+  color:var(--black);
+  margin-bottom:1.5rem;
+}
+.card02 .meta i{
+  font-style:normal;
+}
+
+.card02-01 .meta{
+  padding: 0 2rem;
+}
+
+.card02-01 .thumb {
+  flex-basis:50%;
+  border-right:none;
+}
+.card02-01 .thumb:before {
+  padding-top:48.86%
+}
+.card02-01 .thumb img {
+  width: auto;
+  height:100%;
+}
+.card02-01 .thumb img.fullwidth {
+  width: 100%;
+  height: auto;
+}
 
 
 /*슬라이더 - 공통*/
