@@ -1332,8 +1332,121 @@ body.home #main-content {
   width:23.625rem;
 }
 
+/* contents */
+.st-contents{
+  margin-bottom:-8.25rem;
+}
+.st-contents > div{
+  padding:5.625rem 0;
+}
+.headings04{
+  display:flex;
+  align-items: center;
+}
+.headings04 .thumb{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:18.75rem;
+  height:18.75rem;
+  border:1px solid var(--line-color);
+  background-color:var(--white);
+  margin-right:3.75rem;
+}
+.headings04 .thumb img{
+  width:80%;
+}
+.headings04{
+  margin-bottom:3.75rem;
+}
+.headings04 .title h3{
+  font-size:2.5rem;
+  font-weight:400;
+  line-height:1.15;
+  color:var(--key-brown);
+  margin-bottom:1.5rem;
+}
+.headings04 .title p{
+  font-size:1.25rem;
+  font-family: 'Roboto';
+}
+.headings04 .title p br{
+  margin-bottom:0.75rem;
+}
+
+.slider-carousel02 .slick-list{
+  overflow:visible;
+}
+.slider-carousel02 li{
+  margin:0 0.3125rem;
+}
+.slider-carousel02 li img{
+  height:10.625rem;
+  display:block;
+}
+.slider-carousel02 .slick-dots{
+  text-align:center;
+}
 
 
+.st-contents > .museum{
+  padding-top:4rem;
+  background-color:var(--bg-color);
+}
+.st-contents > .museum .headings04{
+  margin-bottom:3rem;
+}
+
+.st-contents > .culture{
+  background-color: rgba(246, 173, 45, 0.1);
+}
+.st-contents > .culture .headings04{
+  justify-content: space-between;
+}
+.st-contents > .culture .headings04 .title{
+  width:25.375rem;
+}
+.st-contents > .culture .headings04 .explore{
+  display:flex;
+}
+.st-contents > .culture .headings04 .explore > li{
+  width:12.5rem;
+  height:17.5rem;
+  margin-left:1.25rem;
+  border:1px solid var(--line-color);
+}
+.st-contents > .culture .headings04 .explore > li img.fillheight{
+  height:100%;
+  display:block;
+}
+.st-contents > .culture .headings04 .explore > li img.fillwidth{
+  width:100%;
+  display:block;
+}
+
+.st-contents > .energy{
+  background-color:var(--bg-color);
+}
+.st-contents > .energy > .inner{
+  display:flex;
+  justify-content: space-between;
+}
+.st-contents > .energy .headings04{
+  width:24rem;
+}
+.movie01{
+  
+}
+.movie01{
+  position:relative; 
+  width:39.625rem; 
+  height:22.375rem; 
+}
+.movie01 iframe{
+  position:absolute; 
+  width:100%; 
+  height:100%;
+}
 /******컴포넌트******/
 
 /*버튼*/

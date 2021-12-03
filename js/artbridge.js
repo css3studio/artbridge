@@ -55,42 +55,53 @@ $(document).ready(function() {
         event.preventDefault();
     });
 
-    //business > 공연 carousel
-	var item_count = $('.performance .slider-carousel01 .slider > li').length;
-	$('.performance .slider-carousel01 .slider').slick({
-		slidesToScroll: 2,
-		arrows: false,
-		dots: item_count > 3 ? true : false,
-		infinite: false,
-		variableWidth: true,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToScroll: 1,
-					dots: item_count > 1 ? true : false,
+    //business carousel
+	$('.slider-carousel01 .slider').each(function(){
+		var item_count = $('li',$(this)).length;
+		var center_item = Math.ceil(item_count / 2);
+		$(this).slick({
+			slidesToScroll: 2,
+			arrows: false,
+			dots: item_count > 3 ? true : false,
+			infinite: false,
+			variableWidth: true,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToScroll: 1,
+						infinite: true,
+						dots: item_count > 1 ? true : false,
+					}
 				}
-			}
-		]
-   	});
-    //business > 탐방 carousel
-	item_count = $('.exploring .slider-carousel01 .slider > li').length;
-	$('.exploring .slider-carousel01 .slider').slick({
-		slidesToScroll: 2,
-		arrows: false,
-		dots: item_count > 3 ? true : false,
-		infinite: false,
-		variableWidth: true,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToScroll: 1,
-					dots: item_count > 1 ? true : false,
+			]
+		});
+	});
+    //contents carousel
+	$('.slider-carousel02 .slider').each(function(){
+		var item_count = $('li',$(this)).length;
+		var center_item = Math.ceil(item_count / 2);
+		$(this).slick({
+			slidesToScroll: 3,
+			slidesToShow: 3,
+			arrows: false,
+			dots: item_count > 5 ? true : false,
+			infinite: false,
+			variableWidth: true,
+			//centerMode: true,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						infinite: true,
+						slidesToScroll: 1,
+						dots: item_count > 1 ? true : false,
+					}
 				}
-			}
-		]
-   	});
+			]
+		   });
+
+	});
 
     //이미지 가로-세로 비율 - jquery
     $('img').each(function() {
