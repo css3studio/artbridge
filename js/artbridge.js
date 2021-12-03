@@ -55,57 +55,43 @@ $(document).ready(function() {
         event.preventDefault();
     });
 
-    //슬라이더 멀티 4개
-	$('.slider-multiple01 .slider').slick({
-		slidesToShow: 4,
-		slidesToScroll: 4,
-		dots: true,
+    //business > 공연 carousel
+	var item_count = $('.performance .slider-carousel01 .slider > li').length;
+	$('.performance .slider-carousel01 .slider').slick({
+		slidesToScroll: 2,
+		arrows: false,
+		dots: item_count > 3 ? true : false,
+		infinite: false,
+		variableWidth: true,
 		responsive: [
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
+					slidesToScroll: 1,
+					dots: item_count > 1 ? true : false,
 				}
 			}
 		]
    	});
-    //슬라이더 멀티 3개
-	$('.slider-multiple02 .slider').slick({
-		slidesToShow: 3,
-		slidesToScroll: 3,
-		dots: true,
+    //business > 탐방 carousel
+	item_count = $('.exploring .slider-carousel01 .slider > li').length;
+	$('.exploring .slider-carousel01 .slider').slick({
+		slidesToScroll: 2,
+		arrows: false,
+		dots: item_count > 3 ? true : false,
+		infinite: false,
+		variableWidth: true,
 		responsive: [
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
+					slidesToScroll: 1,
+					dots: item_count > 1 ? true : false,
 				}
 			}
 		]
    	});
-    //구독하기
-    $(".newsletter-area form").on('submit', function(event) {
-        var input = $("input",$(this));
-        if(input.val().trim() == ""){
-            alert("이메일 주소를 입력해 주세요");
-            input.focus();
-            event.preventDefault();
-        }
-        else
-		    event.preventDefault();
-    });
 
-    //역대영화제 탭메뉴
-    $('.menu-tab01 ul > li > a').on("click",function(event){
-        $(".menu-tab01 ul > li").removeClass("current");
-        $(this).parent().addClass("current");
-        var target = $(this).attr('href');
-        $('.tab-data-area > div').hide();
-        $('.tab-data-area > div' + target).show();
-		event.preventDefault();
-    });
     //이미지 가로-세로 비율 - jquery
     $('img').each(function() {
         var img = new Image();
