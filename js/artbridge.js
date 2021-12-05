@@ -55,6 +55,15 @@ $(document).ready(function() {
         event.preventDefault();
     });
 
+    //space carousel
+	$('.slider-carousel03 .slider').each(function(){
+		var item_count = $('li',$(this)).length;
+		$(this).slick({
+			arrows: false,
+			dots: item_count > 1 ? true : false,
+			infinite: true
+		});
+	});
     //business carousel
 	$('.slider-carousel01 .slider').each(function(){
 		var item_count = $('li',$(this)).length;

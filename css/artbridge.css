@@ -729,6 +729,36 @@ body.home #main-content {
   line-height:1.15;
 }
 
+.headings02-01{
+  height:58.25rem;
+  background:url(../images/st-space01.png) no-repeat;
+  background-position:calc(50% + 25.2rem) 0;
+  background-size:auto 100%;
+}
+.headings02-01 .sub-title{
+  text-align: right;
+  padding:5rem 35rem 0 0;
+}
+.headings02-01 .description{
+  text-align: right;
+  padding:2.625rem 35rem 0 0;
+  font-size:1.25rem;
+  font-family: 'Roboto';
+}
+.headings02-01 .description > p{
+  margin-bottom:1.25rem;
+}
+.headings02-01 .description > ul.floors{
+  margin-top:4.5rem;
+}
+.headings02-01 .description > ul.floors > li{
+  margin-top:1.25rem;
+}
+.headings02-01 .description > ul.floors > li b{
+  margin-left:2rem;
+  color:var(--key-brown);
+}
+
 .menu-tab02{
   display:flex;
   font-family:'Poppins', sans-serif;
@@ -1045,6 +1075,90 @@ body.home #main-content {
 .st-about-bridge .map-area .info-block > div.transit > dl > dd > dl > dd{
   width:44rem;
 }
+
+/* space */
+.st-space{
+  margin-bottom:-8.25rem;
+}
+.st-space > div{
+  padding:3rem 0;
+}
+.st-space .title h3{
+  font-size: 3.75rem;
+  line-height: 1.15;
+  font-weight:400;
+  margin-bottom:2.125rem;
+}
+.st-space .title p{
+  font-size: 1.25rem;
+  margin-bottom:1.25rem;
+  font-family: 'Roboto';
+  max-width:27rem;
+}
+
+.slider-carousel03 li.slick-slide{
+  width:33.125rem;
+  height:33.125rem;
+  overflow:hidden;
+}
+
+.slider-carousel03 li img.fillwidth{
+  height:100%;
+}
+.slider-carousel03 li img.fillheight{
+  width:100%;
+}
+
+.slider-carousel03 .slick-dots{
+  text-align:center;
+  margin-top:1.5rem;
+}
+.st-space .arthouse .inner{
+  max-width:90rem;
+  display:flex;
+}
+.st-space .arthouse .title{
+  padding-top:6rem;
+}
+.st-space .theater .inner{
+  display:flex;
+}
+.st-space .theater .title{
+  padding-top:2rem;
+}
+.st-space .arthouse  .slider-carousel03{
+  width:33.125rem;
+  margin-right:3.5rem;
+}
+
+.st-space .theater  .slider-carousel03{
+  width:40rem;
+  margin-right:3.5rem;
+}
+.st-space .theater .slider-carousel03 li.slick-slide{
+  width:40rem;
+  height:30rem;
+}
+
+.st-space .bookstore .inner{
+  max-width:90rem;
+}
+.st-space .bookstore .gallary{
+  margin-bottom:4.375rem;
+}
+.st-space .bookstore .gallary ul{
+  display:flex;
+  justify-content: space-between;
+  gap:1rem;
+}
+.st-space .bookstore .gallary ul li img{
+  width:100%;
+}
+.st-space .bookstore .title{
+  padding-left:calc(50% - 17rem)
+}
+
+
 
 /* business */
 .st-business{
