@@ -854,19 +854,22 @@ body.home #main-content {
 /****** static page ******/
 
 /* about > bridge */
-.st-about-bridge .banner-top{
+.static .banner-top{
   background: #eee url(../images/st-about-bridge01.png) no-repeat center center;
   background-size: cover;
   margin-bottom:18.5625rem;
 }
-.st-about-bridge .banner-top .inner{
+.st-about-history .banner-top{
+  background-image:url(../images/st-about-history01.png);
+}
+.static  .banner-top .inner{
   position:relative;
   display:flex;
   justify-content: center;
   align-items: center;
   height:52.0625rem;
 }
-.st-about-bridge .banner-top .inner h1{
+.static .banner-top .inner h1{
   position:absolute;
   top:-0.8rem;
   left:0;
@@ -875,40 +878,40 @@ body.home #main-content {
   font-size:7.5rem;
   line-height:1;
 }
-.st-about-bridge .banner-top .inner .sub-title{
+.static .banner-top .inner .sub-title{
   position:absolute;
   bottom:-12.4rem;
   left:0;
   font-size:5rem;
   line-height:1.15;
 }
-.st-about-bridge .banner-top .inner .sub-title strong{
+.static .banner-top .inner .sub-title strong{
   display:block;
   color:var(--white);
 }
-.st-about-bridge .banner-top .inner .sub-title span{
+.static .banner-top .inner .sub-title span{
   display:block;
   font-weight:300;
 }
-.st-about-bridge .banner-top .inner .sub-title b{
+.static .banner-top .inner .sub-title b{
   display:block;
   font-weight:400;
 }
 
-.st-about-bridge .banner-top .inner > span{
+.static .banner-top .inner > span{
   height:21.6875rem;
   width:26.375rem;
   display:flex;
   justify-content: space-between; 
 }
-.st-about-bridge .banner-top .inner > span:before{
+.static .banner-top .inner > span:before{
   content:"";
   width:1.4375rem;
   height:22.375rem;
   background:url(../images/st-bracket-open.png) no-repeat center center;
   background-size:contain;
 }
-.st-about-bridge .banner-top .inner > span:after{
+.static .banner-top .inner > span:after{
   content:"";
   width:1.4375rem;
   height:22.375rem;

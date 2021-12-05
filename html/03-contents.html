@@ -301,40 +301,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script src="../js/artbridge.js"></script>
-
-<script>
-
-	$(function () {
-		var controller = new ScrollMagic.Controller({
-			globalSceneOptions: {
-				triggerHook: 'onLeave',
-				duration: "100%"
-			}
-		});
-
-		var slides = document.querySelectorAll(".container-main > .banner:not(.banner-main04)");
-
-		for (var i=0; i<slides.length; i++) {
-			new ScrollMagic.Scene({
-					triggerElement: slides[i]
-				})
-				.setPin(slides[i], {pushFollowers: false})
-				//.addIndicators()
-				.addTo(controller);
-		}
-		var slide = document.querySelectorAll(".container-main > .banner-main04");
-
-		new ScrollMagic.Scene({
-				triggerElement: slide
-			})
-			.setClassToggle('header', "hidden")
-			//.addIndicators()
-			.addTo(controller);
-
-	});
-
-</script>
-
-
 </body>
 </html>
