@@ -173,6 +173,9 @@
     width:53px;
     height:53px;
   }
+  .breadcrumb01{
+    display:none;
+  }
 
 
 }
@@ -202,9 +205,6 @@
   /******sub pages ******/
   .container-sub01 {
     padding: 0 0 80px;
-  }
-  .breadcrumb01{
-    display:none;
   }
 
   .headings02 h1{
@@ -294,27 +294,139 @@
     margin-bottom:16px;
   }
 
+  .card02-01{
+    display:block;
+  }
+  .card02-01 .thumb{
+    display:block;
+  }
+  .card02-01 .meta{
+    display:block;
+    padding: 24px 20px;
+  }
 
-.card02-01{
-  display:block;
+  /**** static pages ****/
+  /* business */
+  .st-business{
+    margin-bottom:-80px;
+  }
+  .st-business > div{
+    padding:64px 0;
+  }
+  .st-business .inner{
+    padding-left:60px;
+  }
+  .st-business .inner:after{
+    width:80px;
+    height:80px;
+    border-radius:40px;
+  }
+.st-business .headlines{
+  position:relative;
 }
-.card02-01 .thumb{
-  display:block;
-}
-.card02-01 .meta{
-  display:block;
-  padding: 24px 20px;
+.st-business .headlines > li{
+  margin-bottom:40px;
 }
 
+  .st-business .headlines .thumb{
+    margin-bottom:16px;
+    width:auto;
+    height:auto;
+  }
+  .st-business .headlines .thumb img{
+    width:100%;
+    height:auto;
+  }
+  .st-business .headlines .meta b{
+    margin-bottom:8px;
+  }
+  .st-business .headings03{
+    margin-left:36px;
+  }
+  .st-business .festival .headlines{
+    display:block;
+  }
+  .st-business .festival .headlines li:nth-child(1){
+    width:auto;
+  }
+  .st-business .festival .headlines li:nth-child(3){
+    margin-top:0;
+    margin-left:auto;
+    margin-right:auto;
+    width:245px;
+    transform: translate(-30px,0);
+  }
+  .st-business .festival .headlines li:nth-child(2){
+    position:static;
+    width:auto;
+    margin-left:-76px;
+    margin-right:120px;
+  }
+  .st-business .festival .headlines li:nth-child(2) .meta{
+    position:static;
+    display:block;
+    padding:0 16px;
+  }
+  .st-business .education .headlines{
+    padding-left:0
+  }
+  .st-business .education .headlines > li:nth-child(2) > a,
+  .st-business .education .headlines > li:nth-child(3) > a{
+    display:block;
+  }
+  .st-business .education .headlines > li:nth-child(2){
+    margin-bottom:40px;
+  }
+  .st-business .education .headlines > li:nth-child(3){
+    margin-bottom:0;
+  }
+  .st-business .education .headlines > li:nth-child(2) > a .thumb,
+  .st-business .education .headlines > li:nth-child(3) > a .thumb{
+    margin-right:0;
+    margin-bottom:16px;
+  }
+  .st-business .education .headlines > li:nth-child(1){
+    position:static;
+    width:auto;
+  }
+  .st-business .education .headlines > li:nth-child(1) > a .thumb{
+    height:auto;
+  }
+
+  .publishing .thumbnail01{
+    margin-left:-60px;
+  }
+
+  .st-business .space .info{
+    margin-top:20px;
+  }
+  .thumbnail02{
+    display:block;
+    width:auto;
+  }
+  .thumbnail02 > li{
+    margin-bottom:8px;
+  }
+
+  .thumbnail02 > li:nth-child(1){
+    width:auto;
+  }
+  .thumbnail02 > li:nth-child(2){
+    width:auto;
+  }
+  .thumbnail02 > li:nth-child(3){
+    width:auto;
+  }
+  .thumbnail02 > li:nth-child(4){
+    width:auto;
+  }
 
 
 
 
 
-  /*슬라이더 - 공통*/
 
 
-  /*타이틀-페이지*/
 
 
 
