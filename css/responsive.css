@@ -196,167 +196,64 @@
     height: 32px
   }
 
-  /******컨테이너******/
 
   /****** main page ******/
-  .container-main .banner-area {
-    background-size: auto 100%
+
+  /******sub pages ******/
+  .container-sub01 {
+    padding: 0 0 80px;
+  }
+  .breadcrumb01{
+    display:none;
   }
 
-  .container-main .banner-area .inner {
-    height: 480px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0 16px
+  .headings02 h1{
+    position:absolute;
+    top:0;
+    left:38px;
+    font-size:80px;
+    line-height:1;
+  }
+  .headings02 .sub-title{
+    padding:60px 0 0 95px;
+    font-size:40px;
+    word-break:keep-all;
   }
 
-  .container-main .banner-area .inner:before {
-    width: 108px;
-    height: 168px;
-    left: -16px
-  }
-
-  .container-main .banner-area .inner:after {
-    width: 136px;
-    height: 136px;
-    bottom: -70px;
-    right: -60px
-  }
-
-  .container-main .banner-area .content {
-    bottom: 48px
-  }
-
-  .container-main .banner-area .content h2 {
-    margin-bottom: 8px
-  }
-
-  .container-main .banner-area .content h2 em {
-    font-size: 16px;
-    margin-bottom: 8px
-  }
-
-  .container-main .banner-area .content h2 strong {
-    font-size: 24px
-  }
-
-  .container-main .banner-area .content ul li {
-    margin-right: 0
-  }
-
-  .container-main .banner-area .content ul li>strong {
-    font-size: 16px;
-    margin-right: 8px
-  }
-
-  .container-main .banner-area .content ul li>b {
-    font-size: 16px;
-    margin-right: 8px
-  }
-
-  .container-main .banner-area .moveDown {
-    right: 16px;
-    bottom: 0rem;
-    width: 26px;
-    height: 40px0
-  }
-
-  .container-main .headline-area01 {
-    padding: 72px 0 80px;
-    background-size: auto 100%;
-    background-position: right center
-  }
-
-  .container-main .headline-area02 {
-    padding: 72px 0 80px
-  }
-
-  .container-main .headline-area02 .title-main01 {
-    padding-bottom: 30px
-  }
-
-  .container-main .headline-area02 .btn-more02 {
-    right: initial;
-    left: 0;
-    top: 95px
-  }
-
-  .container-main .newsletter-area .inner {
-    padding: 36px 0;
-    display: block
-  }
-
-  .container-main .newsletter-area h3 {
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.6;
-    width: 260px;
-    margin: 0 auto 32px
-  }
-
-  .container-main .newsletter-area form {
-    padding-right: 0;
-    border-radius: 0.3rem
-  }
-
-  .container-main .newsletter-area form input {
-    height: 48px;
-    font-size: 16px;
-    width: 100%;
-    border-radius: 0.3rem;
-    margin-bottom: 8px
-  }
-
-  .container-main .newsletter-area form button {
-    height: 48px;
-    font-size: 20px;
-    display: block;
-    width: 100%;
-    ;
-    margin-left: 0;
-    border-radius: 0.3rem
-  }
-
-  .container-main .map-area {
-    height: 240px
-  }
-
-  /*sub page container*/
-  .container01 .banner-area iframe {
-    width: 100%;
-    height: 320px
-  }
-
-  .container01>.sticky-buttons {
-    position: fixed;
-    bottom: -56px;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 56px;
-    padding: 8px 8px;
-    box-sizing: border-box;
-    background-color: #fff;
-    border-radius: 8px;
-    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
-    display: flex;
+  .menu-tab02{
+    display:flex;
     justify-content: space-between;
-    transition: bottom 1s
+    gap:18px;
+  }
+  .menu-tab02 li{
+    flex-basis:50%;
+  }
+  .menu-tab02 li{
+    margin-right:0;
+  }
+  .menu-tab02 li a{
+    width:auto;
+  } 
+  
+  .list-thumbnail01{
+    display:block;
+  }
+  .list-thumbnail01 > li{
+    flex-basis:49%;
+    margin-right:0;
+    margin-bottom:16px;
   }
 
-  .container01>.sticky-buttons.appear {
-    bottom: 0
-  }
-
-  .container01>.sticky-buttons .btn-large01 {
-    padding: 8px 0;
-    flex-basis: 50%;
-    text-align: center;
-    margin: 0 8px
-  }
+.list-thumbnail02{
+  margin-bottom:4rem;
+}
+.list-thumbnail02 > li{
+  margin-bottom:1.25rem;
+}
 
 
-  /*버튼*/
+  /******컴포넌트******/
+
   .btn-menu01 {
     display: inline-block;
     border: none;
@@ -380,33 +277,42 @@
     text-indent: 0;
   }
 
+  .card02 .thumb {
+    flex-basis:134px;
+  }
+  .card02 .meta{
+    padding: 0 20px;
+  }
+  .card02 .meta b{
+    margin-bottom:8px;
+  }
+  .card02 .meta strong{
+    font-size:18px;
+    margin-bottom:16px;
+  }
+  .card02 .meta em{
+    margin-bottom:16px;
+  }
+
+
+.card02-01{
+  display:block;
+}
+.card02-01 .thumb{
+  display:block;
+}
+.card02-01 .meta{
+  display:block;
+  padding: 24px 20px;
+}
+
 
 
 
 
 
   /*슬라이더 - 공통*/
-  .slick-dots {
-    bottom: -50px;
-  }
 
-  .slick-dots li button {
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-  }
-
-  .slick-dots li {
-    width: 16px;
-    height: 16px;
-    margin: 0 6px
-  }
-
-  .slick-dots li.slick-active button {
-    width: 16px;
-    height: 16px;
-    border-radius: 8px;
-  }
 
   /*타이틀-페이지*/
 
