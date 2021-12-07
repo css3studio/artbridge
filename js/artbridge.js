@@ -18,6 +18,11 @@ $(window).resize(function() {
 		init_pc();
 		device_status = "pc";
 	}
+	if($('.container-main').length > 0) {
+		destroyController();
+		createScrollMagic();
+	}
+
 });
 
 /* 메뉴고정
@@ -124,9 +129,45 @@ $(document).ready(function() {
         };
     });
 
+
+	if($('.container-main').length > 0) {
+		createScrollMagic()
+	}
+
 });
+//메인화면 패럴럭스
+var controller
+function createScrollMagic() {
+	controller = new ScrollMagic.Controller({
+		globalSceneOptions: {
+			triggerHook: 'onLeave',
+			duration: "100%"
+		}
+	});
 
+	var slides = document.querySelectorAll(".container-main > .banner:not(.banner-main04)");
 
+	for (var i=0; i<slides.length; i++) {
+		new ScrollMagic.Scene({
+				triggerElement: slides[i]
+			})
+			.setPin(slides[i], {pushFollowers: false})
+			//.addIndicators()
+			.addTo(controller);
+	}
+	var slide = document.querySelectorAll(".container-main > .banner-main04");
+
+	new ScrollMagic.Scene({
+			triggerElement: slide
+		})
+		.setClassToggle('header', "hidden")
+		//.addIndicators()
+		.addTo(controller);
+
+}
+function destroyController() {
+	controller.destroy(true);
+}
 //PC버젼 초기화
 var is_mouse_on_sub = false;
 function init_pc(){
@@ -185,9 +226,11 @@ function init_mobile(){
 		event.preventDefault();
 	});
 	$("body.mobile .menu-main > li.expanded > a").on("click",function(event){
+
 		if($(this).parent().hasClass('current')){
 			$(this).parent().removeClass('current');
 		}else{
+			$(this).parent().siblings().removeClass('current');
 			$(this).parent().addClass('current');
 		}
 		event.preventDefault();

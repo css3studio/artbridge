@@ -11,6 +11,10 @@
     border-radius: 0;
     -webkit-appearance: none
   }
+  a:active, a:hover {
+    text-decoration: none;
+  }
+
   .inner {
     max-width: 100%;
     margin: 0 16px
@@ -126,11 +130,15 @@
   }
   header.open-mobile-menu nav {
     height:calc(100vh - 114px);
-    transition: height 0.3s
+    transition: height 0.3s;
+    overflow:scroll;
   }
 
   header.open-mobile-menu .menu-mobile li.menu .btn-menu01:after {
     content: "\e921"
+  }
+  body.home .btn-menu01 {
+    color:#fff;
   }
 
 
@@ -187,7 +195,7 @@
   }
 
   body {
-    overflow-x: hidden
+    
   }
 
   input[type=text],
@@ -201,6 +209,74 @@
 
 
   /****** main page ******/
+
+  .container-main .banner:before{
+    background: rgba(0,0,0,0.5);
+  }
+  .container-main  .banner > .more {
+    bottom:48px;
+  }
+  .banner-main01 .headings01 b span{
+    width:180px
+  }
+
+  .headings01{
+    display:block;
+    text-align: center;
+    font-size:52px;
+  }
+  .headings01 > b{
+    font-size:66px;
+    height:91px;
+    margin: 1rem 0;
+    justify-content: center;
+  }
+  .headings01 > b:before{
+    width:18px;
+    height:91px;
+    margin-right:0;
+  }
+  .headings01 > b:after{
+    width:18px;
+    height:91px;
+    margin-left:0;
+  }
+  
+  .menu-mobile-space{
+    width:100vw;
+    overflow-x:scroll;
+  }
+
+  .headline-area {
+    padding:60px 0;
+  }
+  .headline-area .inner{
+    display:block;
+  }
+  .headline-area .inner .more{
+    padding-top:38px;
+  }
+  .headline-area .news-area{
+    margin-bottom:62px;
+  }
+  .sns-area .header-area h3{
+    margin-right:30px;
+  }
+
+  .menu-quick01{
+    display:table;
+    margin:0 64px;
+  }
+  .menu-quick01 > li{
+    display:table-cell;
+    width:80px;
+    margin:0;
+    padding-right:24px;
+  }
+
+  .menu-tab01 li{
+    margin-right:12px;
+  }
 
   /******sub pages ******/
   .container-sub01 {

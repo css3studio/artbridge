@@ -99,7 +99,7 @@
 				<div class="inner">
 					<h2 class="headings01">
 						<span>아트브릿지는</span>
-						<b>????????</b>
+						<b><span></span></b>
 						<span>만듭니다</span>
 					</h2>
 				</div>
@@ -138,14 +138,16 @@
 						<b>지역과 함께</b>
 						<span>만듭니다</span>
 					</h2>
-					<ul class="menu-quick01">
-						<li class="festival"><a href="#">축제</a></li>
-						<li class="education"><a href="#">교육</a></li>
-						<li class="performance"><a href="#">공연</a></li>
-						<li class="visit"><a href="#">탐방</a></li>
-						<li class="publish"><a href="#">출판</a></li>
-						<li class="space"><a href="#">공간</a></li>
-					</ul>
+					<div class="menu-mobile-space">
+						<ul class="menu-quick01">
+							<li class="festival"><a href="#">축제</a></li>
+							<li class="education"><a href="#">교육</a></li>
+							<li class="performance"><a href="#">공연</a></li>
+							<li class="visit"><a href="#">탐방</a></li>
+							<li class="publish"><a href="#">출판</a></li>
+							<li class="space"><a href="#">공간</a></li>
+						</ul>
+					</div>
 				</div>
 				<a class="button01 more" href="#">More about Business</a>
 			</div>
@@ -270,40 +272,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script src="../js/artbridge.js"></script>
-
-<script>
-
-	$(function () {
-		var controller = new ScrollMagic.Controller({
-			globalSceneOptions: {
-				triggerHook: 'onLeave',
-				duration: "100%"
-			}
-		});
-
-		var slides = document.querySelectorAll(".container-main > .banner:not(.banner-main04)");
-
-		for (var i=0; i<slides.length; i++) {
-			new ScrollMagic.Scene({
-					triggerElement: slides[i]
-				})
-				.setPin(slides[i], {pushFollowers: false})
-				//.addIndicators()
-				.addTo(controller);
-		}
-		var slide = document.querySelectorAll(".container-main > .banner-main04");
-
-		new ScrollMagic.Scene({
-				triggerElement: slide
-			})
-			.setClassToggle('header', "hidden")
-			//.addIndicators()
-			.addTo(controller);
-
-	});
-
-</script>
-
 
 </body>
 </html>
