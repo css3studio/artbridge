@@ -220,6 +220,30 @@
     word-break:keep-all;
   }
 
+  .headings02-01{
+    height:auto;
+    background:none;
+  }
+  .headings02-01 .floors:before{
+    content:"";
+    display:block;
+    width:100vw;
+    height:610px;
+    background:url(../images/st-space01.png) no-repeat;
+    background-position:center bottom;
+    background-size:cover;
+    margin:0 -16px;
+  }
+  .headings02-01 .sub-title{
+    padding:60px 0 0 0;
+  }
+  .headings02-01 .description{
+    padding:2.625rem 0 0 0;
+  }
+  .headings02-01 .description > ul.floors{
+    margin-top:3rem;
+  }
+
   .menu-tab02{
     display:flex;
     justify-content: space-between;
@@ -244,12 +268,12 @@
     margin-bottom:16px;
   }
 
-.list-thumbnail02{
-  margin-bottom:4rem;
-}
-.list-thumbnail02 > li{
-  margin-bottom:1.25rem;
-}
+  .list-thumbnail02{
+    margin-bottom:4rem;
+  }
+  .list-thumbnail02 > li{
+    margin-bottom:1.25rem;
+  }
 
 
   /******컴포넌트******/
@@ -306,6 +330,80 @@
   }
 
   /**** static pages ****/
+  
+  /* space */
+  .st-space{
+    margin-bottom:-60px;
+  }
+
+  .st-space .title h3{
+    font-size:40px;
+    margin-bottom:24px;
+  }
+  .st-space .title h3 br{
+    display:none;
+  }
+  .slider-carousel03 li.slick-slide {
+      width:auto;
+      height:400px;
+  }  
+  .slider-carousel03 li.slick-slide img {
+      height:100%;
+  }
+  .st-space .arthouse .inner{
+    display:block;
+    padding-right:60px;
+  }
+  .st-space .arthouse .title{
+    padding-top:3rem;
+  }
+  .st-space .arthouse  .slider-carousel03{
+    margin-right:0;
+    margin-left:-16px;
+    width:100%;
+  }  
+  
+  .st-space .theater .inner{
+    display:block;
+    padding-left:60px;
+  }
+
+  .st-space .theater .slider-carousel03{
+    width:400px;
+    margin-right:0;
+    margin-left:10px;
+  }
+  .st-space .theater .slider-carousel03 li.slick-slide{
+    height:400px;
+  }
+
+.st-space .bookstore .gallary{
+  margin-bottom:48px;
+}
+.st-space .bookstore .gallary ul{
+  flex-wrap: wrap;
+  align-items: end;
+  gap:12px;
+}
+.st-space .bookstore .gallary ul li:nth-child(1){
+  flex-basis:48%;
+
+}
+.st-space .bookstore .gallary ul li:nth-child(2){
+  flex-basis:48%;
+
+}
+.st-space .bookstore .gallary ul li:last-child{
+  flex-basis:100%;
+}
+.st-space .bookstore .gallary ul li img{
+  width:100%;
+}
+.st-space .bookstore .title{
+  padding-left:calc(50% - 17rem)
+}
+
+
   /* business */
   .st-business{
     margin-bottom:-80px;
@@ -321,12 +419,12 @@
     height:80px;
     border-radius:40px;
   }
-.st-business .headlines{
-  position:relative;
-}
-.st-business .headlines > li{
-  margin-bottom:40px;
-}
+  .st-business .headlines{
+    position:relative;
+  }
+  .st-business .headlines > li{
+    margin-bottom:40px;
+  }
 
   .st-business .headlines .thumb{
     margin-bottom:16px;
