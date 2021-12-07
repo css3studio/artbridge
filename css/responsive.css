@@ -422,8 +422,79 @@
   }
 
 
+  /* contents */
+  .st-contents{
+    margin-bottom:-80px;
+  }
+  .st-contents > div{
+    padding:64px 0;
+  }
+  .headings04{
+    display:block;
+  }
+  .headings04 .thumb{
+    width:auto;
+    margin-right:0;
+    margin-bottom:32px;
+  }
+  .headings04 .title h3{
+    font-size:32px;
+  }
 
-
+  .st-contents > .museum{
+    padding-bottom:1.5rem;
+  }
+  .st-contents > .theater{
+    padding-bottom:1.5rem;
+  }
+  .st-contents > .culture{
+    padding-bottom:1.5rem;
+  }
+  .st-contents > .culture .headings04{
+    margin-bottom:2rem;
+  }
+  .st-contents > .culture .headings04 .title{
+    width:auto;
+    margin-bottom:2rem;
+  }
+  .st-contents > .culture .headings04 .explore{
+    justify-content: space-between; 
+    gap:12px;
+  }
+  .st-contents > .culture .headings04 .explore > li{
+    width:auto;
+    flex-basis: 31%;
+    height:auto;
+    margin-left:0;
+  }
+  .st-contents > .culture .headings04 .explore > li img.fillheight {
+    min-height:100%;
+    width:100%;
+  }
+  
+  .st-contents > .school{
+    padding-bottom:1.5rem;
+  }   
+  .st-contents > .energy > .inner{
+    display:block;
+  }
+  .st-contents > .energy .headings04{
+    width:auto;
+  }
+  .movie01{
+    position:relative; 
+    width:100%; 
+    height:0; 
+    padding-bottom:56.25%;
+  }
+  .movie01 iframe{
+    position:absolute; 
+    width:100%; 
+    height:100%;
+  }
+  .st-contents > .playground{
+    padding-bottom:1.5rem;
+  }   
 
 
 
